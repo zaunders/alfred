@@ -17,19 +17,10 @@ export const layoutData = {
     <rocket-content-area>
       <rocket-columns>
         <div>
-          <strong>Find Us</strong><br />
-          Modern Web<br />
-          Internet 12<br />
-          0000 Web<br />
-          <a href="#">hello@modern-web.dev</a><br />
-          <a href="#">0000 / 11223344</a>
-        </div>
-
-        <div class="legal">
-          <strong>More</strong> <br />
-          <a href="#">About</a><br />
-          <a href="#">Us</a><br />
-          <a href="#">Welcome</a><br />
+          <strong>Hitta mig</strong><br />
+          i Röstånga<br />
+          <a href="#">alfred@epost.se</a><br />
+          <a href="#">+46 92929292929292</a>
         </div>
       </rocket-columns>
     </rocket-content-area>

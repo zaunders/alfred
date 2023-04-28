@@ -11,16 +11,6 @@ export async function registerCustomElements() {
   customElements.define('rocket-header-scroll-menu', await import('@rocket/components/header-scroll-menu.js').then(m => m.RocketHeaderScrollMenu));
   // prettier-ignore
   customElements.define('rocket-columns', await import('@rocket/components/columns.js').then(m => m.RocketColumns));
-  // prettier-ignore
-  customElements.define('rocket-icon-card', await import('@rocket/components/icon-card.js').then(m => m.RocketIconCard));
-  // prettier-ignore
-  customElements.define('rocket-feature-small', await import('@rocket/components/feature-small.js').then(m => m.RocketFeatureSmall));
-  // prettier-ignore
-  customElements.define('rocket-card', await import('@rocket/components/card.js').then(m => m.RocketCard));
-  // prettier-ignore
-  customElements.define('rocket-testimonial-small', await import('@rocket/components/testimonial-small.js').then(m => m.RocketTestimonialSmall));
-  // prettier-ignore
-  customElements.define('rocket-details', await import('@rocket/components/details.js').then(m => m.RocketDetails));
   // hydrate-able components
   // prettier-ignore
   customElements.define('rocket-rotating-text', await import('@rocket/components/rotating-text.js').then(m => m.RocketRotatingText));
@@ -42,7 +32,7 @@ export const needsLoader = true;
 <rocket-content-area>
   <rocket-columns>
     <div>
-      <h1 id="home" link-text="Home">
+      <h1 id="home" link-text="Hem">
         <rocket-rotating-text
           loading="hydrate:onVisible"
           items='["Välkommen", "Hello", "Welcome"]'
@@ -50,7 +40,7 @@ export const needsLoader = true;
         <span>till Alfreds hemsida.</span>
       </h1>
       <p>Här kan du hitta mina skapelser och andra saker jag vill dela med mig av</p>
-      <a class="cta" href="#signup">Jag vill se!</a>
+      <a class="cta" href="#pearls">Jag vill se!</a>
     </div>
 
     <img
@@ -65,21 +55,16 @@ export const needsLoader = true;
 <rocket-content-area>
   <rocket-columns>
     <div>
-      <h2>I've spent quality time in the aerospace community</h2>
+      <h2 id="pearls" link-text="Pärlplattor">Här finns det pärlplattor</h2>
       <p>
-        ✅ with my service on two presidential commissions. <br />
-        ✅ but at heart, I'm an academic..
-        <br />
-        ✅ Being an academic means I don't wield power over person. <br />
-        ✅ place or thing.<br />
-        ✅ I don't command armies
+        Venosaur pärlplatta<br />
       </p>
-      <a class="cta" href="#signup">I want more</a>
-    </div>
-    <img src="resolve:#src/images/details-1.svg" alt="alternative" width="146" height="150" />
+    <img src="resolve:#src/images/venosaur.jpg" alt="alternative" width="400"/>
+  </div>
   </rocket-columns>
 </rocket-content-area>
 
+<!-- 
 <rocket-content-area>
   <h2 id="credit" link-text="Credit" class="area-headline">
     People credit me for <br />
@@ -248,8 +233,8 @@ export const needsLoader = true;
       </div>
     </rocket-details>
   </div>
-
-  <!-- --------------------------------------------------------------------------------------------- -->
+-->
+  <!-- --------------------------------------------------------------------------------------------- 
 
   <h3>Second</h3>
   <rocket-details>
@@ -279,3 +264,4 @@ export const needsLoader = true;
     </div>
   </rocket-details>
 </rocket-content-area>
+-->
